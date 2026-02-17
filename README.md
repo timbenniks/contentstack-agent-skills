@@ -18,9 +18,23 @@ A collection of [Agent Skills](https://agentskills.io) that extend AI agents wit
 - Contentstack CLI installed globally (`npm install -g @contentstack/cli`) or available via npx
 - A Contentstack account with appropriate permissions
 
+### Using skills.sh (works with all compatible agents)
+
+Install skills using [skills.sh](https://skills.sh) — works with Claude Code, Cursor, GitHub Copilot, and 20+ other agents:
+
+```bash
+# Install all skills
+npx skills add timbenniks/contentstack-skills
+
+# Install a specific skill
+npx skills add timbenniks/contentstack-skills --skill contentstack-cli-assistant
+npx skills add timbenniks/contentstack-skills --skill contentstack-delivery-sdk-assistant
+npx skills add timbenniks/contentstack-skills --skill contentstack-js-to-ts-migration
+```
+
 ### Using with Claude Code
 
-Add skills to your project by copying the skill folder into your repository, or install directly:
+Install directly with the Claude Code CLI:
 
 ```bash
 # CLI assistant
@@ -35,7 +49,7 @@ npx @anthropic-ai/claude-code skill add https://github.com/timbenniks/contentsta
 
 ### Using with other agents
 
-Copy the skill folder into your agent's skill directory. The skills follow the open [Agent Skills](https://agentskills.io) format and can be used by any agent that supports it.
+Copy the skill folder into your agent's skill directory, or use `npx skills add` (see above). The skills follow the open [Agent Skills](https://agentskills.io) format and can be used by any agent that supports it.
 
 ### Manual setup
 
