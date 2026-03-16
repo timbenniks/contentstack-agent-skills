@@ -24,12 +24,12 @@ Install skills using [skills.sh](https://skills.sh) — works with Claude Code, 
 
 ```bash
 # Install all skills
-npx skills add timbenniks/contentstack-skills
+npx skills add timbenniks/contentstack-agent-skills
 
 # Install a specific skill
-npx skills add timbenniks/contentstack-skills --skill contentstack-cli-assistant
-npx skills add timbenniks/contentstack-skills --skill contentstack-delivery-sdk-assistant
-npx skills add timbenniks/contentstack-skills --skill contentstack-js-to-ts-migration
+npx skills add timbenniks/contentstack-agent-skills --skill contentstack-cli-assistant
+npx skills add timbenniks/contentstack-agent-skills --skill contentstack-delivery-sdk-assistant
+npx skills add timbenniks/contentstack-agent-skills --skill contentstack-js-to-ts-migration
 ```
 
 ### Using with Claude Code
@@ -38,13 +38,13 @@ Install directly with the Claude Code CLI:
 
 ```bash
 # CLI assistant
-npx @anthropic-ai/claude-code skill add https://github.com/timbenniks/contentstack-skills/tree/main/contentstack-cli-assistant
+npx @anthropic-ai/claude-code skill add https://github.com/timbenniks/contentstack-agent-skills/tree/main/contentstack-cli-assistant
 
 # Delivery SDK assistant
-npx @anthropic-ai/claude-code skill add https://github.com/timbenniks/contentstack-skills/tree/main/contentstack-delivery-sdk-assistant
+npx @anthropic-ai/claude-code skill add https://github.com/timbenniks/contentstack-agent-skills/tree/main/contentstack-delivery-sdk-assistant
 
 # JS → TS SDK migration assistant
-npx @anthropic-ai/claude-code skill add https://github.com/timbenniks/contentstack-skills/tree/main/contentstack-js-to-ts-migration
+npx @anthropic-ai/claude-code skill add https://github.com/timbenniks/contentstack-agent-skills/tree/main/contentstack-js-to-ts-migration
 ```
 
 ### Using with other agents
@@ -55,7 +55,7 @@ Copy the skill folder into your agent's skill directory, or use `npx skills add`
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/timbenniks/contentstack-skills.git
+   git clone https://github.com/timbenniks/contentstack-agent-skills.git
    ```
 
 2. Ensure the Contentstack CLI is available:
